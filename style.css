@@ -1,0 +1,153 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #320073;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    position: relative; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+}
+
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 20px; 
+    background-image: url('images/border.PNG'); 
+    background-repeat: repeat-x; 
+    background-size: auto 100%; 
+    z-index: -1;
+}
+
+body.animate {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+
+header {
+    background-color: #320073;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: start;     /* Vertically center */
+    height: 100vh;           /* Adjust the height as needed */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #320073;
+    background-color: #fff;
+}
+
+table th {
+    background-color: #FF00A5;
+    color: #f0e6ec;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 10px 0;
+    color: #f2eef7;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+    padding: 10px 0;
+    color: #f2eef7;
+    text-align: center;
+}
+
+
+header {
+    background-color: #320073;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #FF00A5;
+}
+
